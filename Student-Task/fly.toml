@@ -1,0 +1,12 @@
+﻿app = "student-task-backend"
+primary_region = "sin"
+
+[build]
+  dockerfile = "Dockerfile" # change if your Dockerfile is in a subfolder
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_start_machines = true
+  auto_stop_machines = true
+  min_machines_running = 0
